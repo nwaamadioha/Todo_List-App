@@ -162,7 +162,7 @@ app.get("/about", function(req, res) {
 
 //Set port to listen at heroku and at port 3000 and notify in the console
 let port = process.env.PORT;
-if( port == null || port = ''){
+if( port == null || port == " "){
   port = 3000;
 }
 app.listen(port, function() {
