@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 //Connect the app to the database using mongoose
-mongoose.connect("mongodb+srv://admin:QWASpolk123@cluster0.sejss.mongodb.net/todolistDB");
+mongoose.connect(process.env.MONGO_DB_URI);
 
 //Create a Schema for list items
 const itemsSchema = {
