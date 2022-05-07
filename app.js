@@ -62,7 +62,7 @@ app.get("/", function(req, res) {
         if (err) {
           console.log(err);
         } else {
-          console.log("Your data was successfully saved!");
+          console.log("Default data used to populate the list");
         }
       });
     } else {
@@ -73,6 +73,8 @@ app.get("/", function(req, res) {
     }
   });
 });
+
+/*---------------------APIs------------------*/
 
 //Create a post method to add new items to our list
 app.post("/", function(req, res) {
